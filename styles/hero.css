@@ -1,0 +1,150 @@
+.hero {
+	height: 100vh;
+	background-image: linear-gradient(
+			to top,
+			#000000cc 0,
+			rgba(0, 0, 0, 0) 60%,
+			#000000cc 100%
+		),
+		url(../assets/images/hero-bg.jpg);
+	background-size: cover;
+	position: relative;
+}
+.overlay {
+	background: #00000066;
+	position: absolute;
+	inset: 0;
+	z-index: 1;
+}
+header {
+	padding: 1.5em 10em;
+	z-index: 2;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+}
+
+header div {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.logo {
+	width: 148px;
+}
+.header-btn{
+	padding: 6px 16px;
+	border-radius: 4px;
+	font-size: 14px;
+}
+.intro-container {
+	width: 100%;
+	position: absolute;
+	top: 40%;
+	z-index: 2;
+	display: grid;
+	place-items: center;
+	padding: 0 20px;
+}
+.intro {
+	display: grid;
+	place-items: center;
+	text-align: center;
+	width: fit-content;
+}
+.intro h1 {
+	font-size: 3em;
+}
+.intro p {
+	font-size: 1.5em;
+	margin-top: 1em;
+}
+form {
+	margin-top: 1.5em;
+	display: grid;
+	place-items: center;
+}
+form h3 {
+	font-size: 1.25em;
+	font-weight: 300;
+}
+.form-field {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 10px;
+	margin-top: 1em;
+	max-width: 600px;
+	width: 100%;
+}
+.input-box {
+	position: relative;
+	flex: 1;
+	height: 54px;
+	border: 1px solid #5e5e5f;
+	border-radius: 3px;
+	background-color: rgba(15, 15, 15, 0.7);
+}
+.input-box .input {
+	position: absolute;
+	width: 100%;
+	top: 50%;
+	left: 0;
+	transform: translateY(-50%);
+	font-family: "NetflixSans-Regular", Helvetica, sans-serif;
+	border: 0;
+	outline: 0;
+	border-radius: inherit;
+	color: #fff;
+	padding-left: 16px;
+	background-color: transparent;
+}
+.input::placeholder {
+	color: transparent;
+	font-family: "NetflixSans-Regular", Helvetica, sans-serif;
+	/* top: 50%;
+	position: absolute; */
+}
+.input:focus {
+	top: 50%;
+}
+.input:placeholder-shown ~ .label {
+	font-family: "NetflixSans-Regular", Helvetica, sans-serif;
+	cursor: text;
+	top: 50%;
+	transform: translateY(-50%);
+}
+.label {
+	position: absolute;
+	font-family: "NetflixSans-Regular", Helvetica, sans-serif;
+	top: 0px;
+	left: 16px;
+	display: block;
+	transition: 0.2s;
+	color: #9b9b9b;
+	pointer-events: none;
+}
+.input:focus ~ .label {
+	position: absolute;
+	top: 5px;
+	display: block;
+	transition: 0.2s;
+	font-size: 17px;
+	color: #9b9b9b;
+	font-size: 12px;
+}
+.form-field button {
+	height: 54px;
+	font-size: 24px;
+	padding: 21px;
+	display: flex;
+	align-items: center;
+	border-radius: 3px;
+	justify-content: center;
+	gap: 5px;
+	width: 210px;
+}
+form button img {
+	width: 25px;
+}

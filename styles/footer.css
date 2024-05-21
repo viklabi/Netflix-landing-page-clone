@@ -1,0 +1,35 @@
+footer{
+  padding: 5em 0 5em 10em;
+  font-family: 'NetflixSans-Regular', Helvetica, sans-serif;
+}
+.footer-wrapper{
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 28px;
+  font-size: 0.85em;
+}
+.footer-links{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  width: 90%;
+}
+.footer-links-child{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+footer p{
+  color: #ffffffb3;
+}
+footer select{
+  width: 8em;
+  height: 2em;
+  border-radius: 3px;
+  border: 1px solid #ffffffb3;
+  background-color: transparent;
+  color: #fff;
+  font-size: 1.25em;
+  padding: 4px;
+}
